@@ -14,7 +14,6 @@ body {
 
 *{
     margin: 0;
-   /* padding: 0; */
 }
 
 .score-board {
@@ -43,4 +42,35 @@ body {
     position: absolute;
     top: 16px;
     right: -25px;
+}
+
+.result {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.choice > img {
+    padding: 20px 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.choice {
+    display: inline-block;
+}
+
+.choices {
+    text-align: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.action-message {
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
