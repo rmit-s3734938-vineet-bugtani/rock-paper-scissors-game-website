@@ -37,11 +37,11 @@
                 var age =  document.getElementById("ageField").value;
             // });
 
-            // firebase.firestore().collection("User").doc(name+age).set({
-            //     name: name,
-            //     age: age,
+            firebase.firestore().collection("User").doc(name+age).set({
+                name: name,
+                age: age,
 
-            // });
+            });
 
             firebase.firestore().collection("User").get().then((querySnapshot) => {
                 querySnapshot.forEach((doc) => {
