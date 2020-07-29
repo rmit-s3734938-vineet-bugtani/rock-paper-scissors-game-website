@@ -54,11 +54,11 @@ body {
     padding: 20px 10px;
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 .choice {
-    display: inline-block;
+    display: inline;
 }
 
 .choices {

@@ -11,6 +11,8 @@ const choices = ["r", "p", "s"];
 
 var userChoice;
 var computerChoice;
+const userSubscript = "user".sub().fontsize(3);
+const computerSubscript = "comp".sub().fontsize(3);
 
 rock_div.addEventListener("click", function(){
     game("r")
@@ -31,7 +33,7 @@ function win(){
     console.log("User wins");
     userScore++;
     userscore_span.innerHTML = userScore;
-    result_div.innerHTML = symbolConverter(this.userChoice) + " beats " + symbolConverter(this.computerChoice) + ".You win!!"
+    result_div.innerHTML = symbolConverter(this.userChoice) + userSubscript + " beats " + symbolConverter(this.computerChoice) + computerSubscript + ".You win!!"
 }
 
 function symbolConverter(symbol){
@@ -49,7 +51,7 @@ function lose(){
     console.log("User loses");
     computerScore++;
     computerscore_span.innerHTML = computerScore;
-    result_div.innerHTML = symbolConverter(this.computerChoice) + " beats " + symbolConverter(this.userChoice) + ".You lose!!"
+    result_div.innerHTML = symbolConverter(this.computerChoice) + computerSubscript + " beats " + symbolConverter(this.userChoice) + userSubscript + ".You lose!!"
 }
 
 function game(userChoice) {
