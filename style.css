@@ -4,7 +4,7 @@ header {
     color: black;
 }
 
-header > h1 {
+header>h1 {
     padding: 20px;
 }
 
@@ -12,7 +12,7 @@ body {
     background-color: #24272e;
 }
 
-*{
+* {
     margin: 0;
 }
 
@@ -50,7 +50,7 @@ body {
     text-align: center;
 }
 
-.choice > img {
+.choice>img {
     padding: 20px 10px;
     width: 60px;
     height: 60px;
@@ -73,4 +73,20 @@ body {
     color: white;
     font-size: 20px;
     text-align: center;
+}
+
+.button {
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    outline: none !important;
+    font-size: 15px;
+}
+
+.button:hover {
+    cursor: pointer;
 }
